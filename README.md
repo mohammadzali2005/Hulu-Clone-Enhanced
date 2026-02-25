@@ -12,4 +12,4 @@ A modern, responsive Hulu-inspired streaming platform clone built for learning a
 - JAVASCRIPT
 
 ## Screnshot
-![ScreenShot]()
+![ScreenShot](https://github.com/mohammadzali2005/hulu-clone-enhanced/blob/master/Screenshot%20.png)
