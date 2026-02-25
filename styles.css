@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #051427, #042727);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 20px 0 20px 50px;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 1px solid rgb(63, 62, 62);
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  object-fit: contain;
+  height: 100px;
+  width: 120px;
+}
+
+.logo img{
+  height: 100%;
+  width: 100%;
+}
+
+/* header menu */
+.header-icons {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-icon {
+  display: flex;
+  width: 200px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.header-icon p:hover{
+  color: rgb(164, 163, 163);
+  cursor: pointer;
+}
+
+/* toggler */
+.toggler-container{
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 50px;
+  right: 45px;
+}
+
+.toggler-container:hover{
+  cursor: pointer;
+}
+
+.toggler-icon{
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+}
+
+.toggler-icon::after{
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  display: block;
+  position: relative;
+  top: 7.5px;
+}
+
+.toggler-icon::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  display: block;
+  position: relative;
+  bottom: 12px;
+}
+
+/* toggler menu */
+.toggler-menu{
+  height: 200px;
+  width: 100%;
+  display: none;
+}
+
+.toggler-menu ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.toggler-item{
+  text-align: right;
+  padding-right: 20px;
+}
+
+.toggler-link{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.toggler-link:hover{
+  color: rgb(164, 163, 163);
+}
+
+/* navbar */
+.nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgb(63, 62, 62);
+  padding: 10px 20px;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-item{
+  list-style-type: none;
+}
+
+.nav-link {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.nav-link:hover{
+  color: rgb(164, 163, 163);
+}
+
+/* movies */
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+}
+.movie {
+  color: white;
+  width: 400px;
+  height: 450px;
+  border: 1px solid white;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 40px 10px;
+  background-color:rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgb(137, 137, 137);
+}
+
+.movie-img{
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.movie-img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-title {
+  font-size: 30px;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.movie-text {
+  font-size: 14px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+
+/* Responsiveness */
+@media (min-width: 850px) {
+  .header-icons{
+    display: inline-flex;
+  }
+
+  .toggler-container{
+    display: none;
+  }
+
+  .toggler-menu{
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-icons{
+    display: none;
+  }
+
+  .toggler-container{
+    display: block;
+  }
+
+  .movie{
+    width: 300px;
+    height: 375px;
+  }
+
+  .movie-title {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .movie-text {
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 18px;
+  }
+}
