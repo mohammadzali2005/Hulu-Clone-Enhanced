@@ -13,3 +13,7 @@ A modern, responsive Hulu-inspired streaming platform clone built for learning a
 
 ## Screnshot
 ![ScreenShot](https://github.com/mohammadzali2005/hulu-clone-enhanced/blob/master/Screenshot%20.png)
+
+## Links
+- [Live Demo](https://mohammadzali2005.github.io/hulu-clone-enhanced/)
+- [Repo](https://github.com/mohammadzali2005/hulu-clone-enhanced)
